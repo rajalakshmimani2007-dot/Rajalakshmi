@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rajalakshmi S - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="693426e2e098910cbb8e0932ee7e6afc.mp4" type="video/mp4">
+    </video>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Ms.Rajalakshmi</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <div class="card">
+
+        <img src="lachu.jpeg" class="profile-pic">
+
+        <div class="text-section" id="home">
+
+            <h1>
+                Hi, I'm <br>
+                <span class="name">Rajalakshmi</span>
+            </h1>
+
+            <br><br>
+
+            <h3>Full Stack Developer | UI/UX Designer</h3>
+
+            <br><br>
+
+            <p>
+                I build responsive and creative web applications that deliver
+                high performance digital experiences with precision,
+                innovation, and modern design.
+            </p>
+
+            <br>
+
+            <button class="hire-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                <i class="fa-solid fa-heart"></i>
+                Hire Me
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="about-section" id="about">
+
+        <h2>About Me</h2>
+
+        <br><br>
+
+        <p>
+            I started experimenting with websites and apps just out of curiosity,
+            and over time that curiosity turned into passion. Coding became my
+            playground where I enjoy solving problems, and design became my canvas
+            where creativity comes to life. What began as fun slowly shaped my
+            path toward becoming a Full Stack Developer and UI/UX Designer.
+        </p>
+
+        <p>
+            Today, I focus on building responsive, user-friendly web applications
+            that combine clean design with efficient functionality. I believe
+            every project tells a story, and I aim to make each experience
+            intuitive, engaging, and memorable.
+        </p>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="education-section" id="education">
+
+        <h2>Education</h2>
+
+        <br><br>
+
+        <div class="edu-box">
+
+            <h3>Bachelor of Technology (IT)</h3>
+
+            <p>
+                Gojan School of Business and Technology
+            </p>
+
+            <span>Ongoing</span>
+
+        </div>
+
+
+        <div class="edu-box">
+
+            <h3>Higher Secondary Certificate (HSC)</h3>
+
+            <p>
+                Government Higher Secondary School
+            </p>
+
+            <span>Completed</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- SKILLS -->
+    <div class="skills-section" id="skills">
+
+        <h2>Skills</h2>
+
+        <br><br>
+
+        <div class="skill-circles">
+
+            <div class="skill-circle">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+            </div>
+
+            <div class="skill-circle">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+            </div>
+
+            <div class="skill-circle">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-circle">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+            </div>
+
+            <div class="skill-circle">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+            </div>
+
+            <div class="skill-circle">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <span>UI/UX</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="projects-section" id="projects">
+
+        <h2>Projects</h2>
+
+        <br><br>
+
+        <div class="projects-container">
+
+            <div class="project-box">
+
+                <img src="portfolio.png" class="project-img">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Developed a responsive portfolio website using HTML,
+                    CSS, and JavaScript showcasing skills and projects.
+                </p>
+
+            </div>
+
+
+            <div class="project-box">
+
+                <img src="app.png" class="project-img">
+
+                <h3>UI Design Project</h3>
+
+                <p>
+                    Created a modern UI/UX design prototype for a mobile
+                    app using Figma.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="contact-section" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <br><br>
+
+        <form id="contactForm" class="contact-form">
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit" class="hire-btn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- FIREBASE -->
+    <script type="module">
+
+        // Firebase App
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+
+
+        // Firebase Realtime Database
+        import {
+            getDatabase,
+            ref,
+            push
+        } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-database.js";
+
+
+        // Firebase Configuration
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyBaXCycTw4TMdI6Dvp_nNips_plTAVLMv0",
+
+            authDomain: "portfolio-da488.firebaseapp.com",
+
+            databaseURL:
+                "https://portfolio-da488-default-rtdb.firebaseio.com",
+
+            projectId: "portfolio-da488",
+
+            storageBucket:
+                "portfolio-da488.firebasestorage.app",
+
+            messagingSenderId: "73510349582",
+
+            appId:
+                "1:73510349582:web:cf8e34270c7549a394455f"
+
+        };
+
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+
+        // Connect Realtime Database
+        const db = getDatabase(app);
+
+
+        // Contact Form
+        const form = document.getElementById("contactForm");
+
+
+        form.addEventListener("submit", async (e) => {
+
+            e.preventDefault();
+
+
+            // Get values
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            try {
+
+                // Save data inside contacts
+                const contactsRef = ref(db, "contacts");
+
+                await push(contactsRef, {
+
+                    name: name,
+
+                    email: email,
+
+                    message: message,
+
+                    createdAt: new Date().toISOString()
+
+                });
+
+
+                alert("Message sent successfully!");
+
+
+                // Clear form
+                form.reset();
+
+
+            } catch (error) {
+
+                console.error("Firebase Error:", error);
+
+                alert("Message not sent. Please try again.");
+
+            }
+
+        });
+
+    </script>
+<!-- Footer -->
+<footer class="portfolio-footer">
+
+    <div class="footer-content">
+
+        <!-- Left Side -->
+        <div class="copyright">
+            <p>© 2026 Rajalakshmi. All Rights Reserved.</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="keep-touch">
+            <h2>Keep in Touch</h2>
+
+            <div class="footer-line"></div>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                rajalakshmani2007@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 63806 65785
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://wa.me/916380665785" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
