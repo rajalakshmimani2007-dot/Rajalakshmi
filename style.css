@@ -55,9 +55,9 @@ body{
     margin: 80px auto;
     padding: 40px;
     border-radius: 20px;
-    background: rgba(255, 255, 255,0.1);
+    background: rgba(255, 255, 255,0.03);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255,0.3);
+    border: 1px solid rgba(255, 255, 255,0.15);
     color:white;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     min-height: 500px;
@@ -66,18 +66,59 @@ body{
     gap: 40px;
     align-items: center;
     }
-.profile-pic{
-  width: 260px;          
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
-  position: relative;
-  left: -40px;           
-  box-shadow: 0 0 25px #00f0ff,
-              0 0 50px #00f0ff,
-              0 0 80px #00f0ff;   
-   }
+.profile-pic {
+    width: 320px;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 0;
+    border: none;
+
+    position: relative;
+    left: -40px;
+
+    box-shadow: none;
+
+    z-index: 2;
+}
+.profile-wrapper {
+    position: relative;
+    width: 360px;
+    height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Neon curved arc behind the profile */
+
+.profile-arc {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 5px solid #00f0ff;
+    border-radius: 50%;
+
+    filter:
+        drop-shadow(0 0 8px #00f0ff)
+        drop-shadow(0 0 20px #00f0ff)
+        drop-shadow(0 0 40px #00f0ff);
+
+    z-index: 1;
+}
+
+
+/* Profile stays in front */
+
+.profile-wrapper .profile-pic {
+    position: relative;
+    z-index: 2;
+}
    .text-section{
        flex: 1;
        display: flex;
@@ -148,9 +189,9 @@ body{
   margin: 100px auto;
   padding: 40px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
   color: white;
   display: block;
   text-align: center;
@@ -170,9 +211,9 @@ body{
   margin: 80px auto; 
   padding: 50px;       
   border-radius: 20px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
   color: white;
   text-align: center;
 }
@@ -217,9 +258,9 @@ body{
   margin: 80px auto;
   padding: 50px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
   color: white;
   text-align: center;
 }
@@ -290,9 +331,9 @@ body{
   margin: 80px auto;
   padding: 50px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
   color: white;
   text-align: left;
 }
@@ -362,9 +403,9 @@ body{
   margin: 100px auto;
   padding: 50px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
   color: white;
   text-align: center;
 }
