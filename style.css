@@ -67,8 +67,8 @@ body{
     align-items: center;
     }
 .profile-pic {
-    width: 320px;
-    height: 430px;
+    width: 350px;
+    height: 350px;
 
     object-fit: cover;
 
@@ -90,34 +90,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-/* Neon curved arc behind the profile */
-
-.profile-arc {
-    position: absolute;
-
-    width: 350px;
-    height: 350px;
-
-    border: 5px solid #00f0ff;
-    border-radius: 50%;
-
-    filter:
-        drop-shadow(0 0 8px #00f0ff)
-        drop-shadow(0 0 20px #00f0ff)
-        drop-shadow(0 0 40px #00f0ff);
-
-    z-index: 1;
-}
-
-
-/* Profile stays in front */
-
-.profile-wrapper .profile-pic {
-    position: relative;
-    z-index: 2;
 }
    .text-section{
        flex: 1;
