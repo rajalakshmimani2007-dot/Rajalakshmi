@@ -19,3 +19,22 @@ document.getElementById("contactForm").addEventListener("submit", async function
         console.error(error);
     }
 });
+const revealSections = document.querySelectorAll(".reveal");
+
+const sectionObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+revealSections.forEach(section => {
+    sectionObserver.observe(section);
+});
